@@ -49,3 +49,7 @@
   height: 50px; /* Initial height */
   
 }
+.spin-on-hover:hover {
+  transition: transform 0.9s ease-in-out;
+  transform: rotateY(360deg);
+}

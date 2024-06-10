@@ -73,25 +73,25 @@ function Home() {
       </div>
       <div className='bg-blue-950  '>
         <div className='flex flex-wrap flex-col md:flex-row  py-10 px-5 md:px-32 lg:px-0 justify-around '>
-               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0'>
+               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0 spin-on-hover'>
                   <AiOutlineInfoCircle className='text-orange-500 mb-4 text-7xl'/>
                   <h1 className='text-gray-300 text-4xl  font-semibold mb-3'>About</h1>
                   <h3 className='text-gray-300 text-md  font-semibold '>Discover our story, mission,<br/> and vision.</h3>
 
                </div>
-               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0'>
+               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0 spin-on-hover'>
                   <FaUserGraduate  className='text-orange-500 mb-4 text-7xl'/>
                   <h1 className='text-gray-300 text-4xl  font-semibold mb-3'>Admission</h1>
                   <h3 className='text-gray-300 text-md  font-semibold '>Explore enrollment procedures<br/> and requirements.</h3>
 
                </div>
-               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0'>
+               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0 spin-on-hover'>
                   <FaBriefcase  className='text-orange-500 mb-4 text-7xl'/>
                   <h1 className='text-gray-300 text-4xl  font-semibold mb-3'>Career</h1>
                   <h3 className='text-gray-300 text-md  font-semibold '>Crafting Futures, Shaping<br/> Careers.</h3>
 
                </div>
-               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0'>
+               <div className='flex flex-col px-7 rounded-xl w-full lg:w-[20%] py-6 justify-around items-center border border-gray-300 cursor-pointer hover:bg-blue-900 mb-4 lg:mb-0 spin-on-hover'>
                   <MdBusiness className='text-orange-500 mb-4 text-7xl'/>
                   <h1 className='text-gray-300 text-4xl  font-semibold mb-3'>Facility</h1>
                   <h3 className='text-gray-300 text-md  font-semibold '>Unmatched Facility<br/> Standards.</h3>
@@ -191,31 +191,31 @@ function Home() {
       <div className='md:px-20 px-4 py-20 bg-blue-950 mt-2 pb-60'>
         <h1 className='font-bold text-3xl lg:text-6xl mb-14 text-white'>Why We Are Best In<br/> The Industry.</h1>
         <div className='flex flex-wrap flex-col  md:flex-row justify-around'>
-        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8'>
+        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8 spin-on-hover'>
              <MdSportsSoccer className='text-orange-500 text-7xl mb-4'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Sports</h3> 
             <p className='text-gray-300'>Unleashing Athletic Potential</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8'>
+        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8 spin-on-hover'>
              <FaBook className='text-orange-500 text-7xl mb-4'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Academics</h3> 
             <p className='text-gray-300'>Nurturing Intellectual Growth</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8'>
+        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8 spin-on-hover'>
              <FaLaptopCode className='text-orange-500 text-7xl mb-4'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Technology</h3> 
             <p className='text-gray-300'>Empowering with Innovation</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8'>
+        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8 spin-on-hover'>
              < FaUtensils className='text-orange-500 text-7xl mb-4'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Canteen</h3> 
             <p className='text-gray-300'>Nutritious and Delicious</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8'>
+        <div className='flex flex-col justify-center items-center border mb-5 lg:mb-0  border-gray-400 rounded-xl px-5 bg-transparent py-8 spin-on-hover'>
              <FaBook className='text-orange-500 text-7xl mb-4'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Library</h3> 
             <p className='text-gray-300'>Gateway to Knowledge</p>
@@ -233,21 +233,21 @@ function Home() {
       </div>
       <div className='relative bg-transparent -top-48 px-4 md:px-32  lg:px-20'>
       <div className='flex flex-col lg:flex-row '>
-           <div className=' w-full lg:w-[30%] rounded-xl shadow-xl bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 mb-4 md:mb-8 lg:mb-0'>
-            <p className='text-center text-gray-600 mb-6 font-signika text-xl'>"At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development."</p>
+           <div className=' w-full lg:w-[30%] rounded-xl shadow-xl bg-gray-200 py-10 px-14 lg:px-20 hover:shadow-2xl hover:bg-slate-300  lg:me-8 mb-4 md:mb-8 lg:mb-0'>
+            <p className='text-center text-gray-600 mb-6 font-signika text-xl '>"At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development."</p>
         
            <div className='flex justify-center items-center mb-6'><div className='bg-[url("../public/testimonials1.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
            <h3 className='text-center text-lg text-gray-600 mb-1 font-signika' >Tarini Aggarwal</h3>
            <h4 className='text-center text-md text-gray-600 font-signika'>Student</h4>
            </div>
-           <div className='w-full lg:w-[30%] rounded-xl shadow-xl bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 md:mb-8 mb-4 lg:mb-0'>
+           <div className='w-full lg:w-[30%] rounded-xl shadow-xl hover:shadow-2xl hover:bg-slate-300 bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 md:mb-8 mb-4 lg:mb-0'>
             <p className='text-center text-gray-600 mb-6 font-signika text-xl'>"We want our students to become engaged global citizens. That requires imagination, flexibility, resilience, the ability to get along with others, and a sense of humor."</p>
         
            <div className='flex justify-center items-center mb-6'><div className='bg-[url("../public/testimonials2.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
            <h3 className='text-center text-lg text-gray-600 mb-1 font-signika' >Manvi Bhardwaj</h3>
            <h4 className='text-center text-md text-gray-600 font-signika'>Student</h4>
            </div>
-           <div className='w-full lg:w-[30%] rounded-xl shadow-xl bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 mb-4 md:mb-8 lg:mb-0'>
+           <div className='w-full lg:w-[30%] rounded-xl shadow-xl hover:shadow-2xl hover:bg-slate-300 bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 mb-4 md:mb-8 lg:mb-0'>
             <p className='text-center text-gray-600 mb-6 font-signika text-xl'>"At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development."</p>
         
            <div className='flex justify-center items-center mb-6'><div className='bg-[url("../public/testimonials3.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
@@ -256,7 +256,7 @@ function Home() {
            </div>
         </div>
       </div>
-      <div className='flex flex-col lg:flex-row justify-between px-4 lg:px-20'>
+      <div className='flex flex-col lg:flex-row justify-between px-4 lg:px-20 '>
         <div className='w-full lg:w-[50%] lg:ms-20 lg:mt-20 mb-10 lg:mb-0'>
           <h1 className='font-bold text-xl md:text-3xl lg:text-4xl lora mb-5 text-blue-800'>Job openings now available - join our school community!</h1>
           <h3 className='text-gray-600 mb-4 text-xl'>Contact us for more information:</h3>
