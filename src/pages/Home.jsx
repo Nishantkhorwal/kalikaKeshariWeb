@@ -14,8 +14,6 @@ import { FaBook } from "react-icons/fa";
 
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger'
-
-import classNames from 'classnames';
 import Footer from '../components/Footer';
 
 function Home() {
