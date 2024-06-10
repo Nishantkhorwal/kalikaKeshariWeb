@@ -236,21 +236,21 @@ function Home() {
            <div className=' w-full lg:w-[30%] rounded-xl shadow-xl bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 mb-4 md:mb-8 lg:mb-0'>
             <p className='text-center text-gray-600 mb-6 font-signika text-xl'>"At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development."</p>
         
-           <div className='flex justify-center items-center mb-6'><div className='bg-[url("testimonials1.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
+           <div className='flex justify-center items-center mb-6'><div className='bg-[url("../public/testimonials1.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
            <h3 className='text-center text-lg text-gray-600 mb-1 font-signika' >Tarini Aggarwal</h3>
            <h4 className='text-center text-md text-gray-600 font-signika'>Student</h4>
            </div>
            <div className='w-full lg:w-[30%] rounded-xl shadow-xl bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 md:mb-8 mb-4 lg:mb-0'>
             <p className='text-center text-gray-600 mb-6 font-signika text-xl'>"We want our students to become engaged global citizens. That requires imagination, flexibility, resilience, the ability to get along with others, and a sense of humor."</p>
         
-           <div className='flex justify-center items-center mb-6'><div className='bg-[url("testimonials2.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
+           <div className='flex justify-center items-center mb-6'><div className='bg-[url("../public/testimonials2.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
            <h3 className='text-center text-lg text-gray-600 mb-1 font-signika' >Manvi Bhardwaj</h3>
            <h4 className='text-center text-md text-gray-600 font-signika'>Student</h4>
            </div>
            <div className='w-full lg:w-[30%] rounded-xl shadow-xl bg-gray-200 py-10 px-14 lg:px-20 lg:me-8 mb-4 md:mb-8 lg:mb-0'>
             <p className='text-center text-gray-600 mb-6 font-signika text-xl'>"At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development."</p>
         
-           <div className='flex justify-center items-center mb-6'><div className='bg-[url("testimonials3.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
+           <div className='flex justify-center items-center mb-6'><div className='bg-[url("../public/testimonials3.jpg")] h-14 bg-cover w-14 rounded-full ' > </div></div>
            <h3 className='text-center text-lg text-gray-600 mb-1 font-signika' >Kanishka</h3>
            <h4 className='text-center text-md text-gray-600 font-signika'>Student</h4>
            </div>
