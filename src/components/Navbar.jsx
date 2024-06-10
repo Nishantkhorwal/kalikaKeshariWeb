@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import { MdKeyboardArrowDown } from "react-icons/md";
+import {Link} from 'react-router-dom'
 import '../App.css'
 
 function Navbar() {
@@ -37,7 +38,7 @@ function Navbar() {
   return (
     <div className={`navbar w-full hidden lg:flex justify-end px-6 md:px-28 bg-blue-900 ${isFixed ? 'fixed top-0 left-0 right-0 z-50 justify-center navbar-expanded' : 'navbar-collapsed'}`}>
       <ul className='flex flex-row justify-evenly items-end w-full md:w-[60%] text-white'>
-        <li className='text-lg font-semibold hover:bg-yellow-500 py-3 px-6 cursor-pointer'>Home</li>
+        <Link to='/'><li className='text-lg font-semibold hover:bg-yellow-500 py-3 px-6 cursor-pointer'>Home</li></Link>
         <li className='relative'
           onMouseEnter={() => handleMouseEnter(0)}
           onMouseLeave={handleMouseLeave}>
@@ -115,9 +116,9 @@ function Navbar() {
               onMouseEnter={() => handleMouseEnter(3)}
               onMouseLeave={handleMouseLeave}>
               <ul className='py-2'>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Contact Information</li>
+              <Link to='/contactinfo'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Contact Information</li></Link>
                 <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Enquiry</li>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Career</li>
+               <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Career</li>
               </ul>
             </div>
           )}
