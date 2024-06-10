@@ -8,7 +8,7 @@ function Enquiry() {
   return (
     <>
       <Headers/>
-      <div className='bg-[url("../public/bgImage3.jpg")] h-[600px] w-full bg-opacity-35  relative bg-cover filter bg-no-repeat flex flex-row justify-start items-center'>
+      <div className='bg-[url("../public/bgImage4.svg")] h-[800px] w-full bg-opacity-70  relative bg-cover filter bg-no-repeat flex flex-row justify-start items-center'>
             
             <div className='bg-orange-400 w-fit ps-10 pe-56  py-16 flex flex-row text-white bg-opacity-70'>
                 <h1 className='text-6xl font-bold lora me-4'>Enquiry Form</h1>
@@ -16,10 +16,10 @@ function Enquiry() {
 
             </div>
      </div>
-     <div className='py-20 px-20'>
-     <div className='w-full border rounded-[50px] shadow-xl duration-100 transition ' id='Contact'>
+     <div className='py-20 px-20 bg-gray-100'>
+     <div className='w-full border rounded-[50px] shadow-xl duration-100 transition bg-white' id='Contact'>
         <form className='flex flex-col py-20 md:px-20 px-8'>
-          <h1 className='text-5xl mb-14 text-blue-500 font-bold lora'>Enquiry</h1>
+          <h1 className='text-5xl mb-14 text-orange-600 font-bold lora'>Enquiry Form</h1>
           <div className='flex flex-col  md:flex-row md:justify-between mb-8 '>
             <div className='w-full md:w-[48%] mb-3 md:mb-0'>
               <label htmlFor='first_name' className='text-lg font-signika'>Full Name<span className='text-red-500'>*</span></label>
