@@ -94,8 +94,8 @@ function Navbar() {
               onMouseEnter={() => handleMouseEnter(2)}
               onMouseLeave={handleMouseLeave}>
               <ul className='py-2'>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Parent's Testimonials</li>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Student's Testimonials</li>
+                <Link to='/parenttestimonials'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Parent's Testimonials</li></Link>
+                <Link to='/studenttestimonials'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Student's Testimonials</li></Link>
                 <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Our Gallery</li>
               </ul>
             </div>

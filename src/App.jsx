@@ -6,6 +6,8 @@ import Enquiry from "./pages/Enquiry"
 import Career from "./pages/Career"
 import Admission from "./pages/Admission"
 import ApplyNow from "./pages/ApplyNow"
+import ParentTestimonials from "./pages/ParentTestimonials"
+import StudentTestimonials from "./pages/StudentTestimonials"
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
        <Route path='/career' element={<Career/>}/>
        <Route path='/admissionprocess' element={<Admission/>}/>
        <Route path='/applynow' element={<ApplyNow/>}/>
+       <Route path='/parenttestimonials' element={<ParentTestimonials/>}/>
+       <Route path='/studenttestimonials' element={<StudentTestimonials/>}/>
       
        </Routes>
        </BrowserRouter>
