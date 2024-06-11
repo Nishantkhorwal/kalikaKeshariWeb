@@ -14,9 +14,9 @@ function Admission() {
       <Headers/>
       <div className='bg-[url("../public/bgImage6.jpg")] h-[700px] w-full bg-opacity-70  relative bg-cover filter bg-no-repeat flex flex-row justify-start items-center'>
             
-            <div className='bg-orange-400 w-fit ps-10 pe-28  py-16 flex flex-row text-white bg-opacity-70 '>
-                <h1 className=' text-3xl md:text-6xl font-bold lora me-4'>Admission Process</h1>
-                <IoIosArrowDown className='text-6xl font-bold lora'/>
+            <div className='bg-orange-400 w-fit ps-10 pe-6 md:pe-28 py-8  md:py-16 flex flex-row text-white bg-opacity-70 '>
+                <h1 className=' text-xl md:text-6xl font-bold lora me-4'>Admission Process</h1>
+                <IoIosArrowDown className=' text-xl md:text-6xl font-bold lora'/>
 
             </div>
      </div>
@@ -46,84 +46,86 @@ function Admission() {
 
          </div>
          </div>
-         <div className="container mx-auto p-4 px-20 mb-10">
-            <h1 className="text-5xl font-bold mb-10 lora">Fee Structure</h1>
-            <div className="border border-gray-200 rounded-lg overflow-hidden duration-75 transition-all">
-              <h2 id="accordionHeading ">
-                <button
-                  type="button"
-                  className="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 bg-gray-100 focus:outline-none"
-                  onClick={toggleAccordion}
-                  aria-expanded={isAccordionOpen}
-                  aria-controls="accordionBody"
-                >
-                  <span>Fees and Payment Information</span>
-                  <svg
-                    className={`w-6 h-6 transform transition-transform ${isAccordionOpen ? 'rotate-180' : ''}`}
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </h2>
-              {isAccordionOpen && (
-                <div
-                  id="accordionBody"
-                  className="p-5 border-t border-gray-200 transition-all duration-100"
-                  aria-labelledby="accordionHeading"
+         <div className="container mx-auto p-4 sm:px-6 lg:px-20 mb-10">
+  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 lora">Fee Structure</h1>
+  <div className="border border-gray-200 rounded-lg overflow-hidden duration-75 transition-all">
+    <h2 id="accordionHeading">
+      <button
+        type="button"
+        className="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 bg-gray-100 focus:outline-none"
+        onClick={toggleAccordion}
+        aria-expanded={isAccordionOpen}
+        aria-controls="accordionBody"
+      >
+        <span>Fees and Payment Information</span>
+        <svg
+          className={`w-6 h-6 transform transition-transform ${isAccordionOpen ? 'rotate-180' : ''}`}
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </h2>
+    {isAccordionOpen && (
+      <div
+        id="accordionBody"
+        className="p-5 border-t border-gray-200 transition-all duration-100"
+        aria-labelledby="accordionHeading"
+      >
+        <div className="overflow-x-auto">
+          <table className="min-w-full bg-white border-collapse">
+            <thead>
+              <tr>
+                <th className="py-2 px-4 border-b">Fees</th>
+                <th className="py-2 px-4 border-b">Payment Frequency</th>
+                <th className="py-2 px-4 border-b">Amount (INR)</th>
+              </tr>
+            </thead>
+            <tbody className="text-center">
+              <tr>
+                <td className="py-2 px-4 border-b">Registration Fee</td>
+                <td className="py-2 px-4 border-b">One Time Payment</td>
+                <td className="py-2 px-4 border-b">100</td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4 border-b">Admission Fee</td>
+                <td className="py-2 px-4 border-b">One Time Payment</td>
+                <td className="py-2 px-4 border-b">500</td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4 border-b font-bold">Tuition Fee (Per Month)</td>
+                <td className="py-2 px-4 border-b"></td>
+                <td className="py-2 px-4 border-b"></td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4 border-b">Nursery To 5th</td>
+                <td className="py-2 px-4 border-b">Monthly</td>
+                <td className="py-2 px-4 border-b">300</td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4 border-b">6th to 8th</td>
+                <td className="py-2 px-4 border-b">Monthly</td>
+                <td className="py-2 px-4 border-b">400</td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4 border-b">9th to 12th</td>
+                <td className="py-2 px-4 border-b">Monthly</td>
+                <td className="py-2 px-4 border-b">500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    )}
+  </div>
+</div>
 
-                >
-                  <table className="min-w-full bg-white border-collapse">
-                    <thead>
-                      <tr>
-                        <th className="py-2 px-4 border-b">Fees</th>
-                        <th className="py-2 px-4 border-b">Payment Frequency</th>
-                        <th className="py-2 px-4 border-b">Amount (INR)</th>
-                      </tr>
-                    </thead>
-                    <tbody className="text-center">
-                      <tr>
-                        <td className="py-2 px-4 border-b">Registration Fee</td>
-                        <td className="py-2 px-4 border-b">One Time Payment</td>
-                        <td className="py-2 px-4 border-b">100</td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 px-4 border-b">Admission Fee</td>
-                        <td className="py-2 px-4 border-b">One Time Payment</td>
-                        <td className="py-2 px-4 border-b">500</td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 px-4 border-b font-bold ">Tution Fee(Per Month)</td>
-                        <td className="py-2 px-4 border-b"></td>
-                        <td className="py-2 px-4 border-b"></td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 px-4 border-b">Nursery To 5th</td>
-                        <td className="py-2 px-4 border-b">Monthly</td>
-                        <td className="py-2 px-4 border-b">300</td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 px-4 border-b">6th to 8th </td>
-                        <td className="py-2 px-4 border-b">Monthly</td>
-                        <td className="py-2 px-4 border-b">400</td>
-                      </tr>
-                      <tr>
-                        <td className="py-2 px-4 border-b">9th to 12th</td>
-                        <td className="py-2 px-4 border-b">Monthly</td>
-                        <td className="py-2 px-4 border-b">500</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              )}
-            </div>
-          </div>
           <Footer/>
     </>
   )
