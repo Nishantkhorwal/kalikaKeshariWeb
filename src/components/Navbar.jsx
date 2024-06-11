@@ -74,9 +74,8 @@ function Navbar() {
               onMouseEnter={() => handleMouseEnter(1)}
               onMouseLeave={handleMouseLeave}>
               <ul className='py-2'>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Admission Process</li>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Visit Us</li>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Apply Now</li>
+              <Link to='/admissionprocess'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Admission Process / Fees</li></Link>
+              <Link to='/applynow'> <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Apply Now</li></Link>
               </ul>
             </div>
           )}
@@ -118,7 +117,7 @@ function Navbar() {
               <ul className='py-2'>
               <Link to='/contactinfo'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Contact Information</li></Link>
               <Link to='/enquiry'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Enquiry</li></Link>
-               <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Career</li>
+              <Link to='/career'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Career</li></Link>
               </ul>
             </div>
           )}
