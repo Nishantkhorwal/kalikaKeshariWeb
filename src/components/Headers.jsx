@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import Navbar from './Navbar';
@@ -53,9 +54,8 @@ function Headers() {
               <div className='flex flex-row justify-between w-full'><h1>Admission</h1> {openDropdown[0] ? <MdKeyboardArrowUp className="ml-2" /> : <MdKeyboardArrowDown className="ml-2" />}</div>
                 {openDropdown[2] && (
                   <ul className=''>
-                    <li className='text-base py-2 cursor-pointer'>Admission Process</li>
-                    <li className='text-base py-2 cursor-pointer'>Visit Us</li>
-                    <li className='text-base py-2 cursor-pointer'>Apply Now</li>
+                    <Link to='/admissionprocess'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Admission Process / Fees</li></Link>
+                    <Link to='/applynow'> <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Apply Now</li></Link>
                   </ul>
                 )}
               </li>
@@ -73,9 +73,9 @@ function Headers() {
               <div className='flex flex-row justify-between w-full'><h1>Contact</h1> {openDropdown[0] ? <MdKeyboardArrowUp className="ml-2" /> : <MdKeyboardArrowDown className="ml-2" />}</div>
                 {openDropdown[4] && (
                   <ul className=''>
-                    <li className='text-base py-2 cursor-pointer'>Contact Information</li>
-                    <li className='text-base py-2 cursor-pointer'>Enquiry</li>
-                    <li className='text-base py-2 cursor-pointer'>Career</li>
+                    <Link to='/contactinfo'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Contact Information</li></Link>
+              <Link to='/enquiry'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Enquiry</li></Link>
+              <Link to='/career'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Career</li></Link>
                   </ul>
                 )}
               </li>

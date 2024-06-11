@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import Headers from '../components/Headers'
 import classNames from 'classnames';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function ApplyNow() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,8 +28,8 @@ function ApplyNow() {
   }, []);
   return (
     <>
-      <Navbar/>
-      <div className="relative h-[679px]">
+      <Headers/>
+      <div className="relative h-[679px] ">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -48,12 +49,13 @@ function ApplyNow() {
             {/* Overlay text */}
             {currentSlide === index && (
               <div className="absolute top-72 bg-transparent left-2   md:left-5 w-[40%]  p-4">
-                <p className="text-yellow-500 font-bold text-3xl   md:text-6xl ">{quotes[index]}</p>
+                <p className="text-yellow-500 font-bold text-3xl lora   md:text-6xl ">{quotes[index]}</p>
               </div>
             )}
           </div>
         ))}
       </div>
+      <Footer/>
     </>
   )
 }

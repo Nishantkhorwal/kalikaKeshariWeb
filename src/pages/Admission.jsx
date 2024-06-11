@@ -15,7 +15,7 @@ function Admission() {
       <div className='bg-[url("../public/bgImage6.jpg")] h-[700px] w-full bg-opacity-70  relative bg-cover filter bg-no-repeat flex flex-row justify-start items-center'>
             
             <div className='bg-orange-400 w-fit ps-10 pe-28  py-16 flex flex-row text-white bg-opacity-70 '>
-                <h1 className='text-6xl font-bold lora me-4'>Admission Process</h1>
+                <h1 className=' text-3xl md:text-6xl font-bold lora me-4'>Admission Process</h1>
                 <IoIosArrowDown className='text-6xl font-bold lora'/>
 
             </div>
