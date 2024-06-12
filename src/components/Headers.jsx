@@ -44,9 +44,9 @@ function Headers() {
               <div className='flex flex-row justify-between w-full'><h1>Why Us</h1> {openDropdown[0] ? <MdKeyboardArrowUp className="ml-2" /> : <MdKeyboardArrowDown className="ml-2" />}</div>
                 {openDropdown[1] && (
                   <ul className=''>
-                    <li className='text-base py-2 cursor-pointer'>Vision, Mission & Values</li>
-                    <li className='text-base py-2 cursor-pointer'>Chairperson's Message</li>
-                    <li className='text-base py-2 cursor-pointer'>Principal's Message</li>
+                     <Link to='/vision'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Vision, Mission & Values</li></Link>
+                     <Link to='/foundermessage'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Founder's Message</li></Link>
+                     <Link to='/principalmessage'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Principal's Message</li></Link>
                   </ul>
                 )}
               </li>

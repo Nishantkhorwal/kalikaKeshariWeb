@@ -8,6 +8,9 @@ import Admission from "./pages/Admission"
 import ApplyNow from "./pages/ApplyNow"
 import ParentTestimonials from "./pages/ParentTestimonials"
 import StudentTestimonials from "./pages/StudentTestimonials"
+import Vision from "./pages/Vision"
+import FounderMessage from "./pages/FounderMessage"
+import PrincipalMessage from "./pages/PrincipalMessage"
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
        <Route path='/applynow' element={<ApplyNow/>}/>
        <Route path='/parenttestimonials' element={<ParentTestimonials/>}/>
        <Route path='/studenttestimonials' element={<StudentTestimonials/>}/>
+       <Route path='/vision' element={<Vision/>}/>
+       <Route path='/foundermessage' element={<FounderMessage/>}/>
+       <Route path='/principalmessage' element={<PrincipalMessage/>}/>
       
        </Routes>
        </BrowserRouter>
