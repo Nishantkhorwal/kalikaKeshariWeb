@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FiMenu } from "react-icons/fi";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import Navbar from './Navbar';
+import { FaInstagram, FaTwitter, FaFacebookF } from 'react-icons/fa';
+import { IoLogoWhatsapp } from 'react-icons/io';
 
 function Headers() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -21,14 +23,24 @@ function Headers() {
   return (
     <>
       <div className='w-full'>
-        <div className='flex flex-row justify-between items-center w-full py-4 lg:px-20 bg-gray-100'>
+        <div className='flex flex-row justify-between items-center w-full py-4 lg:px-6 bg-gray-100'>
           <div className='flex flex-row items-center ps-2 lg:ps-10'>
             <img src='logo.png' className='w-[50px] lg:w-[130px] me-6 ' alt='Logo' />
-            <h1 className='font-bold lora text-sm lg:text-5xl lora bg-gradient-to-l from-orange-500 to-yellow-500 text-transparent bg-clip-text'>Kalika Keshari Inter College</h1>
+            <div className='hidden flex-col lg:flex'>
+              <h1 className='text-2xl  md:text-5xl lora text-[#0a2657]'>Kalika</h1>
+              <h3 className='text-xs md:text-2xl lora text-[#0a2657]'>Keshari Inter</h3>
+              <div className='flex flex-row justify-center items-center -mt-2 text-[#0a2657] text-xs md:text-sm'><hr className='border border-t border-black w-full'/><h3>College</h3></div>
+            </div>
+            
           </div>
           <div className='flex flex-row'>
-            <button className='px-4 py-2 rounded-lg bg-yellow-500 font-bold hidden lg:block lg:mx-6 shadow-xl'>Apply Now</button>
-            <button className='px-4 py-2 rounded-lg bg-yellow-500 font-bold shadow-xl hidden lg:block'>Career</button>
+            <button className='px-4 py-2  bg-yellow-500 font-bold hidden lg:block lg:mx-6 shadow-2xl'>Apply Now</button>
+            <button className='px-4 py-2  bg-yellow-500 font-bold shadow-xl hidden lg:me-3 lg:block'>Career</button>
+            <div className=' mx-2 lg:mx-2 lg:px-3 lg:py-2  justify-center items-center bg-white hover:bg-blue-600 cursor-pointer hidden lg:flex '><a href='/'><FaInstagram /></a></div>
+            <div className=' mx-2 lg:mx-2 lg:px-3 lg:py-2  justify-center items-center bg-white hover:bg-blue-600 cursor-pointer hidden lg:flex '><a href='/'><FaTwitter /></a></div>
+            <div className=' mx-2 lg:mx-2 lg:px-3 lg:py-2  justify-center items-center bg-white hover:bg-blue-600 cursor-pointer hidden lg:flex '><a href='/'><IoLogoWhatsapp /></a></div>
+            <div className=' mx-2 lg:mx-2 lg:px-3 lg:py-2 justify-center items-center bg-white hover:bg-blue-600 cursor-pointer hidden lg:flex '><a href='/'><FaFacebookF /></a></div>
+
             <FiMenu className='text-3xl mx-6 block lg:hidden' onClick={handleMenuClick} />
           </div>
         </div>

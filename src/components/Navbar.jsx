@@ -36,8 +36,8 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={`navbar w-full hidden lg:flex justify-end px-6 md:px-28 bg-blue-900 ${isFixed ? 'fixed top-0 left-0 right-0 z-50 justify-center navbar-expanded' : 'navbar-collapsed'}`}>
-      <ul className='flex flex-row justify-evenly items-end w-full md:w-[60%] text-white'>
+    <div className={`navbar w-full hidden lg:flex justify-end px-6 md:px-28 bg-[#0a2657] ${isFixed ? 'fixed top-0 left-0 right-0 z-50 justify-center navbar-expanded' : 'navbar-collapsed'}`}>
+      <ul className='flex flex-row justify-end items-end w-full  text-white'>
         <Link to='/'><li className='text-lg font-semibold hover:bg-yellow-500 py-3 px-6 cursor-pointer'>Home</li></Link>
         <li className='relative'
           onMouseEnter={() => handleMouseEnter(0)}
@@ -49,13 +49,15 @@ function Navbar() {
             Why Us <MdKeyboardArrowDown className='ml-2' />
           </div>
           {openDropdown === 0 && (
-            <div className='absolute top-full left-0 bg-blue-900 text-white text-md font-semibold w-[200px] shadow-md z-10'
+            <div className='absolute top-full left-0 bg-[#0a2657] text-white text-md font-semibold w-[200px] shadow-md z-10'
               onMouseEnter={() => handleMouseEnter(0)}
               onMouseLeave={handleMouseLeave}>
               <ul className='py-2'>
-                <Link to='/vision'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Vision, Mission & Values</li></Link>
-                <Link to='/foundermessage'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Founder's Message</li></Link>
-                <Link to='/principalmessage'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Principal's Message</li></Link>
+                <Link to='/vision'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Vision, Mission & Values</li></Link>
+                <li><hr className='w-full border border-t border-blue-900 '/></li>
+                <Link to='/foundermessage'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Founder's Message</li></Link>
+                 <li><hr className='w-full border border-t border-blue-900 '/></li>
+                <Link to='/principalmessage'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Principal's Message</li></Link>
               </ul>
             </div>
           )}
@@ -70,12 +72,13 @@ function Navbar() {
             Admission <MdKeyboardArrowDown className='ml-2' />
           </div>
           {openDropdown === 1 && (
-            <div className='absolute top-full left-0 bg-blue-900 text-white text-md font-semibold w-[200px] shadow-md z-10'
+            <div className='absolute top-full left-0 bg-[#0a2657] text-white text-md font-semibold w-[200px] shadow-md z-10'
               onMouseEnter={() => handleMouseEnter(1)}
               onMouseLeave={handleMouseLeave}>
               <ul className='py-2'>
-              <Link to='/admissionprocess'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Admission Process / Fees</li></Link>
-              <Link to='/applynow'> <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Apply Now</li></Link>
+              <Link to='/admissionprocess'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Admission Process / Fees</li></Link>
+               <li><hr className='w-full border border-t border-blue-900 '/></li>
+              <Link to='/applynow'> <li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Apply Now</li></Link>
               </ul>
             </div>
           )}
@@ -90,13 +93,15 @@ function Navbar() {
             Parent's Corner <MdKeyboardArrowDown className='ml-2' />
           </div>
           {openDropdown === 2 && (
-            <div className='absolute top-full left-0 bg-blue-900 text-white text-md font-semibold w-[200px] shadow-md z-10'
+            <div className='absolute top-full left-0 bg-[#0a2657] text-white text-md font-semibold w-[200px] shadow-md z-10'
               onMouseEnter={() => handleMouseEnter(2)}
               onMouseLeave={handleMouseLeave}>
               <ul className='py-2'>
-                <Link to='/parenttestimonials'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Parent's Testimonials</li></Link>
-                <Link to='/studenttestimonials'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Student's Testimonials</li></Link>
-                <li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Our Gallery</li>
+                <Link to='/parenttestimonials'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Parent's Testimonials</li></Link>
+                 <li><hr className='w-full border border-t border-blue-900 '/></li>
+                <Link to='/studenttestimonials'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Student's Testimonials</li></Link>
+                 <li><hr className='w-full border border-t border-blue-900 '/></li>
+                <li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Our Gallery</li>
               </ul>
             </div>
           )}
@@ -111,13 +116,15 @@ function Navbar() {
             Contact <MdKeyboardArrowDown className='ml-2' />
           </div>
           {openDropdown === 3 && (
-            <div className='absolute top-full left-0 bg-blue-900 text-white text-md font-semibold w-[200px] shadow-md z-10'
+            <div className='absolute top-full left-0 bg-[#0a2657] text-white text-md font-semibold w-[200px] shadow-md z-10'
               onMouseEnter={() => handleMouseEnter(3)}
               onMouseLeave={handleMouseLeave}>
               <ul className='py-2'>
-              <Link to='/contactinfo'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Contact Information</li></Link>
-              <Link to='/enquiry'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Enquiry</li></Link>
-              <Link to='/career'><li className='px-4 py-2 hover:bg-gray-200 hover:text-blue-900 cursor-pointer'>Career</li></Link>
+              <Link to='/contactinfo'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Contact Information</li></Link>
+               <li><hr className='w-full border border-t border-blue-900 '/></li>
+              <Link to='/enquiry'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Enquiry</li></Link>
+               <li><hr className='w-full border border-t border-blue-900 '/></li>
+              <Link to='/career'><li className='px-4 py-2 hover:bg-yellow-500  cursor-pointer'>Career</li></Link>
               </ul>
             </div>
           )}
