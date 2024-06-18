@@ -149,16 +149,16 @@ function Home() {
             <div className='px-4 flex justify-between items-center w-[60%] py-2 hover:bg-orange-500 cursor-pointer border border-transparent bg-orange-400 text-white text-xl'>Find Out More <IoMdArrowDropright/></div>
            
           </div>
-          <div class='relative bg-[url("/Value1.jpg")] bg-opacity-50 bg-cover object-fill w-full  lg:w-[30%] h-72 mt-4 lg:mt-0 mb-6 lg:mb-0 lg:mx-10'>
+          <div className='relative bg-[url("/Value1.jpg")] bg-opacity-50 bg-cover object-fill w-full  lg:w-[30%] h-72 mt-4 lg:mt-0 mb-6 lg:mb-0 lg:mx-10'>
  
-          <div class='absolute bottom-0 left-0 w-full h-1/2 bg-gray-900 bg-opacity-30 flex flex-col justify-center items-center '>
-            <h2 class='text-xl font-bold text-white mb-4'>Sneak Peek Into School</h2>
-            <p class='text-sm text-gray-100 font-semibold px-3'>What you will get to see once you enroll in our school.</p>
+          <div className='absolute bottom-0 left-0 w-full h-1/2 bg-gray-900 bg-opacity-30 flex flex-col justify-center items-center '>
+            <h2 className='text-xl font-bold text-white mb-4'>Sneak Peek Into School</h2>
+            <p className='text-sm text-gray-100 font-semibold px-3'>What you will get to see once you enroll in our school.</p>
           </div>
         </div>
-        <div class="relative p-4 w-full lg:w-[30%] ">
-          <p class="text-base mb-4">
-            <span class="text-5xl font-bold float-left mr-2 leading-none text-orange-600">A</span>
+        <div className="relative p-4 w-full lg:w-[30%] ">
+          <p className="text-base mb-4">
+            <span className="text-5xl font-bold float-left mr-2 leading-none text-orange-600">A</span>
             <span className='font-semibold text-blue-800'>re you looking for the best school in the Tajopur? If yes, then your search is over.You will get the best facility here.Look what our founder has to say about us.</span>
           </p>
           <p className='text-blue-900 text-md mb-4'> It gives me great pleasure to welcome you to the online home of our institute as the founder and leader of the dedicated team behind our institution. We at Kalika Keshari Inter College are dedicated to creating a learning environment that supports creativity, academic excellence and a passion for life long learning.</p>
@@ -180,7 +180,7 @@ function Home() {
       <div className='flex flex-col lg:flex-row pt-20  px-6 lg:px-20'>
         <div className='flex flex-col w-full lg:w-[70%] mb-5 lg:mb-0'>
           {events.map((e)=>(
-          <div className='flex flex-row mb-5'>
+          <div className='flex flex-row mb-5' key={e.title}>
             <div className={`bg-[url("${e.img}")] object-fill bg-cover w-[25%] h-36 me-7 `}>
 
             </div>
@@ -195,7 +195,7 @@ function Home() {
           ))}
 
         </div>
-        <div className='rounded-lg w-full lg:w-[25%] border lg:relative lg:-top-40  bg-white'>
+        <div className='rounded-lg w-full lg:w-[25%] border lg:relative lg:-top-40  bg-white mb-6 lg:mb-0'>
           <div className='bg-orange-500 h-4 rounded-t-lg mb-6'></div>
           <h1 className='text-blue-950 font-bold text-lg text-center mb-4'>Fun Facts About School</h1>
           <div className='flex justify-center'><hr className='border-t-4 border-t-orange-500  w-10'></hr></div>
@@ -241,7 +241,7 @@ function Home() {
       </div>
       </div>
       <div className='flex flex-row overflow-hidden py-4'> 
-      <div className='w-[5%] h-full me-5' >
+      <div className='w-[5%] hidden lg:block h-full me-5' >
         <div className='w-full  mb-6 h-[400px]'>
           <img src='bgImage6.jpg' className='w-full h-full object-cover'></img>
         </div>
@@ -249,8 +249,8 @@ function Home() {
           <img src='bgImage10.jpg' className='w-full h-full object-cover'></img>
         </div>
       </div>
-          <div className='flex flex-row w-[80%]  '>
-          <div className='px-20  bordder border-transparent bg-gray-50  w-[50%]'>
+          <div className='flex flex-col lg:flex-row w-full lg:w-[80%] mb-6 lg:mb-0 '>
+          <div className='px-20  bordder border-transparent bg-gray-50 w-full  lg:w-[50%] mb-6 lg:mb-0'>
             <h1 className='font-bold text-4xl text-blue-950 mb-7 mt-10'>
               Enquiry Now
             </h1>
@@ -270,7 +270,7 @@ function Home() {
               <button className='w-full bg-orange-500 text-white font-bold text-sm text-center py-4 '>Send</button>
             </form>
           </div>
-          <div className='bg-blue-950   px-4 py-7 w-[50%]'>
+          <div className='bg-blue-950   px-4 py-7 w-full  lg:w-[50%]'>
             <h1 className='font-bold text-3xl px-5 py-5 text-white'>Our Events</h1>
             <div className='flex flex-col px-5'>
               <div className='flex flex-row bg-purple-950 bg-opacity-20 border border-[#47377099] hover:bg-yellow-600 cursor-pointer   py-5 px-5 mb-3'>
@@ -312,7 +312,7 @@ function Home() {
           </div>
 
           </div>
-          <div className='w-[15%] h-full me-5 translate-x-9' >
+          <div className='w-[15%] hidden lg:block h-full me-5 translate-x-9' >
         <div className='w-full  mb-6 h-[400px]'>
           <img src='bgImage3.jpg' className='w-full h-full object-cover'></img>
         </div>
@@ -326,45 +326,45 @@ function Home() {
       <div className='md:px-20 px-4 py-20 bg-blue-950 mt-2 pb-60'>
         <div className='flex flex-row  '>
         <div className='w-full'>
-        <h3 className='text-sm font-bold text-orange-500 mb-2'>Nursery to 12th class</h3>
+        <h3 className='text-sm font-bold text-orange-500 mb-2'>Nursery to 12th className</h3>
         <h1 className='font-bold text-3xl lg:text-6xl mb-14 text-white'>Why We Are Best In<br/> The Industry.</h1>
         </div>
-        <div className='w-[70%] mt-8'>
+        <div className='w-[70%] mt-8 hidden lg:block'>
           <p className='text-gray-200'>Our vertical solutions expertise allows your business to streamline workflow, and increase productivity. No matter the business, has you covered with industry compliant solutions, customized to your company’s specific needs, specific needs.</p>
         </div>
         </div>
-        <div className='flex flex-wrap flex-col  md:flex-row justify-around'>
-        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 hover:bg-opacity-50 px-5 bg-transparent py-8 cursor-pointer '>
+        <div className='flex flex-wrap flex-col  md:flex-row justify-center lg:justify-around'>
+        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-full lg:w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 hover:bg-opacity-50 px-5 bg-transparent py-8 cursor-pointer '>
              <MdSportsSoccer className='text-orange-500 text-7xl mb-4 spin-on-hover'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Sports</h3> 
             <p className='text-gray-300 text-center '>Unleashing Athletic Potential</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
+        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-full lg:w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
              <FaBook className='text-orange-500 text-7xl mb-4 spin-on-hover'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Academics</h3> 
             <p className='text-gray-300 text-center'>Nurturing Intellectual Growth</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
+        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-full lg:w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
              <FaLaptopCode className='text-orange-500 text-7xl mb-4 spin-on-hover'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Technology</h3> 
             <p className='text-gray-300 text-center'>Empowering with Innovation</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
+        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-full lg:w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
              < FaUtensils className='text-orange-500 text-7xl mb-4 spin-on-hover'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Canteen</h3> 
             <p className='text-gray-300 text-center'>Nutritious and Delicious</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
+        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-full lg:w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
              <FaBook className='text-orange-500 text-7xl mb-4 spin-on-hover'/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Library</h3> 
             <p className='text-gray-300 text-center'>Gateway to Knowledge</p>
 
         </div>
-        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
+        <div className='flex flex-col justify-center items-center  mb-5 lg:mb-0 w-full lg:w-[15%]  border-[#47377099] border-4 rounded-md bg-purple-950 bg-opacity-20 px-5 bg-transparent py-8 hover:bg-opacity-50 cursor-pointer'>
              <FaPersonSwimming className='text-orange-500 text-7xl mb-4 spin-on-hover '/>
             <h3 className='font-semibold text-3xl text-gray-300 mb-3 '>Athletics</h3> 
             <p className='text-gray-300 text-center'>Athletism at its best.</p>

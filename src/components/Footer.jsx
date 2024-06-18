@@ -48,23 +48,23 @@ function Footer() {
         </div>
 
       </div> */}
-      <div className='w-full bg-gray-800 px-28 py-16 '>
+      <div className='w-full bg-gray-800 px-8 lg:px-28 py-16 '>
         <div className='flex flex-col lg:flex-row'>
-          <div className=' w-full lg:w-[30%]'>
+          <div className=' w-full lg:w-[30%] mb-6 lg:mb-0'>
           <div className='flex flex-row justify-start items-center mb-5'>
             <img src='logo.png' className='w-10 me-3'></img>
             <h1 className='text-gray-100 text-2xl font-bold '>Kalika Keshari</h1>
 
 
           </div>
-          <p className='text-gray-400  mb-6 text-lg ms-5'>
+          <p className='text-gray-400  mb-6 text-lg ms-5 '>
           Kalika Keshari Inter<br/> College, Tajopur, Mau
           </p>
           <p className='text-gray-100 mb-6 ms-5'>9415633473, 8115338115</p>
           <p className='text-gray-100 mb-6  ms-5'>info@gmail.com</p>
           <hr className='border-t-2 border-green-700 w-72'></hr>
           </div>
-          <div className='w-[20%] me-8'>
+          <div className='w-full lg:w-[20%] me-8 mb-6 lg:mb-0'>
             <h1 className='text-gray-50 font-bold text-2xl mb-3'>Why Us</h1>
             <hr className='border-t-2 border-green-700 mb-6'></hr>
             <ul>
@@ -74,7 +74,7 @@ function Footer() {
             </ul>
 
           </div>
-          <div className='w-[20%] me-8'>
+          <div className='w-full lg:w-[20%] me-8 mb-6 lg:mb-0'>
             <h1 className='text-gray-50 font-bold text-2xl mb-3'>Admission</h1>
             <hr className='border-t-2 border-green-700 mb-6'></hr>
             <ul>
@@ -83,7 +83,7 @@ function Footer() {
             </ul>
 
           </div>
-          <div className='w-[20%]'>
+          <div className='w-full lg:w-[20%] mb-6 lg:mb-0'>
             <h1 className='text-gray-50 font-bold text-2xl mb-3'>Parent's Corner</h1>
             <hr className='border-t-2 border-green-700 mb-6'></hr>
             <ul>
@@ -96,7 +96,7 @@ function Footer() {
         </div>
 
       </div>
-      <div className='bg-gray-700 px-32 py-6'>
+      <div className='bg-gray-700 px-4 lg:px-32 py-6'>
         <div className='flex flex-row justify-between'>
           <p className='text-lg text-gray-400'>Copyright All Right Reserved 2024</p>
           <div className='flex flex-row'>
